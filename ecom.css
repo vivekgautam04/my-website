@@ -1,0 +1,291 @@
+
+
+body{
+  scroll-behavior: smooth;
+
+  font-family: 'Noto Serif NP Hmong', serif;
+  /* font-family: 'Akaya Kanadaka', cursive;
+font-family: 'Roboto', sans-serif; */
+
+
+}
+
+:root{
+  --primary:indianred;
+  --secondary:black;
+  --light:#2f3640;
+}
+
+header{
+  width: 100%;
+  height: 145vh;
+}
+
+.nav1{
+  width: 100%;
+  height: 80px;
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 2px 0px 3px grey;
+  text-align: center;
+
+}
+
+.nav1 .left{
+  flex-basis: 50%;
+  letter-spacing: 2px;
+}
+
+.nav1 .left a{
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bold;
+  margin: 0px 5px;
+}
+
+.right{
+  flex-basis: 50%;
+}
+
+.right a{
+  font-size: 20px;
+  margin: 0px 15px;
+  background-color: var(--primary);
+  color: white;
+  padding: 7px;
+  transition: 0.4s ease-in-out;
+}
+.nav1 .left a:hover{
+  color: blue;
+}
+
+.nav1 .right a:hover{
+  transform: rotate(360deg);
+}
+
+.nav2{
+  width:100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.nav2 .nav2-right,.nav2-mid, .nav2-left{
+  flex-basis: 30%;
+  margin: auto;
+  cursor: pointer;
+
+}
+
+.nav2 .nav2-left i{
+  margin-left: 15px;
+}
+
+.nav2 .nav2-mid h1{
+  color: var(--primary);
+  font-size:2rem;
+  letter-spacing: 5px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.nav2 .nav2-mid h1 span{
+  color: var(--secondary)
+}
+
+.nav2 .nav2-mid p{
+  color: grey;
+  font-size: 15px;
+}
+
+.nav2 .nav2-right{
+  letter-spacing: 2px;
+}
+
+.nav2 .nav2-right i{
+  margin: 0px 5px;
+}
+
+.nav3{
+
+  width: 100%;
+  height: 80px;
+  line-height: 70px;
+
+
+}
+
+.nav3 ul{
+  list-style: none;
+  text-align: center;
+}
+
+.nav3 ul li{
+  display: inline-block;
+  width: 150px;
+  position: relative;
+  z-index: 1;
+}
+
+.nav3 ul li a{
+  text-decoration: none;
+  color:black;
+  font-weight: 500;
+  display: block;
+}
+
+.nav3 ul li a:hover{
+  color: var(--primary);
+
+}
+
+.nav3 ul li i{
+  color: var(--primary);
+}
+
+.nav3 ul ul{
+  position: absolute;
+  top: 70px;
+  margin-left:0px;
+  padding-left: 0px;
+  display: none;
+}
+
+.nav3 ul ul li{
+  background-color: white;
+  border-bottom: 1px solid var(--primary);
+}
+
+.nav3 ul li:hover>ul{
+  display: block;
+}
+
+.featured{
+  width: 100%;
+  height: 100vh;
+  background: url("https://thumbs.dreamstime.com/b/camera-lens-lense-reflections-87757277.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.featured-text{
+
+  position: absolute;
+  top:40%;
+  left: 10%;
+  color:white;
+  font-size: 40px;
+  margin-top: 20px;
+
+
+}
+
+
+.featured-text h2{
+  margin-top: 20px;
+}
+
+.featured-text button{
+  background-color: var(--primary);
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 25%;
+
+}
+
+.latest{
+  padding:30px 100px;
+}
+
+.product-intro h1{
+  color: var(--primary);
+  font-weight: bolder;
+  font-size: 70px;
+  letter-spacing: 1px;
+}
+
+.card{
+  display: flex;
+}
+
+.card div{
+  padding: 25px;
+  margin-top: 50px;
+}
+
+.card div span{
+  color: gold;
+}
+.card div button{
+  background-color: gold;
+  border: 1px solid grey;
+  padding: 7px;
+  cursor: pointer;
+
+}
+
+.card div button:hover{
+  background-color: yellow;
+}
+
+.card div:hover ,img{
+  background-color: lightgrey;
+  cursor: pointer;
+
+}
+
+.card div:hover img{
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.foot{
+
+  display: flex;
+  background-color:rgb(48, 65, 70);
+  color: white;
+  text-align: center;
+  justify-content: space-between;
+
+  align-items: center;
+
+
+}
+
+.foot div{
+
+  flex-basis: 30%;
+}
+.foot div p ,h1{
+  padding: 0px;
+  margin:0px;
+  cursor: pointer;
+
+
+}
+
+.foot div h1 span{
+  color: var(--primary);
+}
+
+@@media only screen and (max-width:769px) {
+
+  .nav1{
+    position: relative;
+    z-index: 2;
+
+  }
+
+  .right a{
+    font-size: 15px;
+    margin: 0px 5px;
+  }
+
+}
